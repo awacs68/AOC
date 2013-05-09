@@ -23,7 +23,20 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-
+    // About Myself
+    
+    // My Name
+    NSLog(@"My name is");
+    NSLog(@"Mark A McAninch");
+    
+    
+    // My Age
+    float myFloat = 44.5f;
+    int myInt = (int) myFloat;
+    
+    NSLog(@"My age is %d", myInt);
+    NSLog(@"In 1 month I will be %.1f", myFloat);
+    
     
     return YES;
 }
