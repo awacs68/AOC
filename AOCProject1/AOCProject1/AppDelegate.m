@@ -23,7 +23,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    // About Myself
+    // About Myself, and my work
     
     // My Name
     NSLog(@"My name is");
@@ -48,11 +48,22 @@
     if ((garages == 65) || (garageA > 30)) {
         NSLog(@"I work at After Hours Garage");
     
-    } else if ((garageA < 20) && (garageB < 55))
+    } else if ((garageA < 20) && (garageB < 55)) {
         NSLog(@"I don't work at Firestone");
+    
+    
+    } else {
+        NSLog(@"I don't work at Dealership"); }
+    
+    // Time before my next shift at work.
+    for (int t=10; t > 0; t--)
     {
+        NSLog(@"Time before I have to go to work in hours: %d hours", t);
         
     }
+        NSLog(@"Time for Work :(");
+    
+    
     
     return YES;
 }
