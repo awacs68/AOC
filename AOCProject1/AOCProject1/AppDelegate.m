@@ -34,9 +34,25 @@
     float myFloat = 44.5f;
     int myInt = (int) myFloat;
     
-    NSLog(@"My age is %d", myInt);
+    NSLog(@"I'm currently %d years old", myInt);
     NSLog(@"In 1 month I will be %.1f", myFloat);
     
+    // Where I work
+    float garageA = 60.5;
+    int garageB = 25;
+    
+    BOOL garages = YES;
+    
+    
+    
+    if ((garages == 65) || (garageA > 30)) {
+        NSLog(@"I work at After Hours Garage");
+    
+    } else if ((garageA < 20) && (garageB < 55))
+        NSLog(@"I don't work at Firestone");
+    {
+        
+    }
     
     return YES;
 }
