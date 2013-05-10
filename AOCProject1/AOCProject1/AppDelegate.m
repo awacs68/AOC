@@ -38,9 +38,11 @@
     NSLog(@"In 1 month I will be %.1f", myFloat);
     
     // Where I work
+    // Using a if and else statement
     float garageA = 60.5;
     int garageB = 25;
     
+    // Bool
     BOOL garages = YES;
     
     
@@ -56,14 +58,39 @@
         NSLog(@"I don't work at Dealership"); }
     
     // Time before my next shift at work.
-    for (int t=10; t > 0; t--)
+    // Using a for loop
+    for (int t=10; t >= 0; t--)
     {
         NSLog(@"Time before I have to go to work in hours: %d hours", t);
         
     }
         NSLog(@"Time for Work :(");
+    // Time before I get off work and begin my school work
+    // Using a while loop
+        NSLog(@"Getting ready to clock out");
+    int hours = 0;
+    while (hours < 9)
+    {
+        NSLog(@"hours = %d\n Time before I go home", hours);
     
+        hours++;
+    }
+        NSLog(@"Time to go home :)");
     
+    //Using a nested loop
+    // Workers
+    
+    for  (userWorkers = 6, userWorkers > 2, userWorkers--);
+    {
+        NSLog(@"This is how many workers showed up for work today %d", userWorkers);
+        
+    for (sickDays = 10, sickDays > 3, sickDays--);
+    {
+        NSLog(@"They have %d sick days left", sickDays);
+        
+    }
+        
+    }
     
     return YES;
 }
