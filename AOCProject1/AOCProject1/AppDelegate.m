@@ -65,6 +65,7 @@
         
     }
         NSLog(@"Time for Work :(");
+    
     // Time before I get off work and begin my school work
     // Using a while loop
         NSLog(@"Getting ready to clock out");
@@ -77,21 +78,17 @@
     }
         NSLog(@"Time to go home :)");
     
-    //Using a nested loop
-    // Workers
+    // Using a nested loop
+    // Employees and Sick Days
     
-    for  (userWorkers = 6, userWorkers > 2, userWorkers--);
-    {
-        NSLog(@"This is how many workers showed up for work today %d", userWorkers);
+    for (int numWorkers = 5; numWorkers < 7; numWorkers++) {
+        NSLog(@"There are %d employees at the garage.", numWorkers);
+        for (int sickDays = 6; sickDays >= 4; sickDays--) {
+        NSLog(@"With %d employees at the garage, we each have %d sickdays for the year.", numWorkers, sickDays);
         
-    for (sickDays = 10, sickDays > 3, sickDays--);
-    {
-        NSLog(@"They have %d sick days left", sickDays);
-        
-    }
-        
-    }
-    
+        }
+     }
+
     return YES;
 }
 
