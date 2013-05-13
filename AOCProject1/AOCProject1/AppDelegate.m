@@ -80,13 +80,11 @@
     //Using a nested loop
     // Workers
     
-    for  (userWorkers = 6, userWorkers > 2, userWorkers--);
+    for  (int userWorkers = 6; userWorkers > 2; userWorkers--);
     {
-        NSLog(@"This is how many workers showed up for work today %d", userWorkers);
-        
-    for (sickDays = 10, sickDays > 3, sickDays--);
-    {
-        NSLog(@"They have %d sick days left", sickDays);
+    for (int sickDays = 10; sickDays > 3 sickDays--);
+    
+       
         
     }
         
