@@ -81,7 +81,7 @@
     // Using a nested loop
     // Employees and Sick Days
     
-<<<<<<< HEAD
+
     for (int numWorkers = 5; numWorkers < 7; numWorkers++) {
         NSLog(@"There are %d employees at the garage.", numWorkers);
         for (int sickDays = 6; sickDays >= 4; sickDays--) {
@@ -90,18 +90,7 @@
         }
      }
 
-=======
-    for  (int userWorkers = 6; userWorkers > 2; userWorkers--);
-    {
-    for (int sickDays = 10; sickDays > 3 sickDays--);
-    
-       
-        
-    }
-        
-    }
-    
->>>>>>> 41661787ae5c47fe3166ae826ad99796c1c98134
+
     return YES;
 }
 
