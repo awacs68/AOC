@@ -29,7 +29,7 @@
     if (label != nil)
     {
         label.backgroundColor = [UIColor redColor];
-        label.text = @"JavaScript 24-Hour Training";
+        label.text = @"JavaScript 24-Hour Trainer";
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = [UIColor whiteColor];
     }
@@ -55,7 +55,7 @@
     if (authorName != nil)
     {
         authorName.backgroundColor = [UIColor greenColor];
-        authorName.text = @"Jermey Mcpeak";
+        authorName.text = @"Jeremey Mcpeak";
         authorName.textAlignment = NSTextAlignmentLeft;
         authorName.textColor = [UIColor magentaColor];
     }
@@ -81,7 +81,7 @@
     if (dateLabel != nil)
     {
         dateLabel.backgroundColor = [UIColor orangeColor];
-        dateLabel.text = @"2011";
+        dateLabel.text = @"Decemember 7, 2010";
         dateLabel.textAlignment = NSTextAlignmentLeft;
         dateLabel.textColor = [UIColor greenColor];
     }
