@@ -54,7 +54,7 @@
     if (authorName != nil)
     {
         authorName.backgroundColor = [UIColor greenColor];
-        authorName.text = @"Jermey Mcpeak:";
+        authorName.text = @"Jermey Mcpeak";
         authorName.textAlignment = NSTextAlignmentLeft;
         authorName.textColor = [UIColor magentaColor];
     }
@@ -80,7 +80,7 @@
     if (dateLabel != nil)
     {
         dateLabel.backgroundColor = [UIColor orangeColor];
-        dateLabel.text = @"Date:";
+        dateLabel.text = @"2011";
         dateLabel.textAlignment = NSTextAlignmentLeft;
         dateLabel.textColor = [UIColor greenColor];
     }
@@ -88,17 +88,51 @@
     [self.view addSubview:dateLabel];
     
     // UILabel Summary label
- /*   UILabel *summaryLabel;
-    summaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 60, 100, 30)];
+    UILabel *summaryLabel;
+    summaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 90, 100, 30)];
     if (summaryLabel != nil)
     {
         summaryLabel.backgroundColor = [UIColor yellowColor];
         summaryLabel.text = @"Summary";
         summaryLabel.textAlignment = NSTextAlignmentLeft;
-        summaryLabel.textColor = [UIColor greenColor];
+        summaryLabel.textColor = [UIColor cyanColor];
     }
     // Add the Subview to execute
-    [self.view addSubview:summaryLabel]; */
+    [self.view addSubview:summaryLabel];
+    
+    // UILabel Summary Box label
+    UILabel *summaryBox;
+    summaryBox = [[UILabel alloc] initWithFrame:CGRectMake(0, 125, 400, 200)];
+    if (summaryBox != nil)
+    {
+        summaryBox.backgroundColor = [UIColor darkGrayColor];
+        summaryBox.text = @"JavaScript is the most popular programming language in the world. It is used on all major Internet sites, and even those not so important. Whether you make a purchase from an online retailer, manage your funds using your bank's website, visit a news site to get caught up on current events, or simply read a blog written by one of the millions of bloggers worlwide, you have experienced JavaScript in some way.";
+        summaryBox.textAlignment = NSTextAlignmentCenter;
+        summaryBox.textColor = [UIColor blackColor];
+        summaryBox.numberOfLines = 20;
+    }
+    // Add the Subview to execute
+    [self.view addSubview:summaryBox];
+    
+    // UILabel List Items label
+    UILabel *listLabel;
+    listLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 325, 100, 30)];
+    if (listLabel != nil)
+    {
+        listLabel.backgroundColor = [UIColor colorWithRed:0 green:0.188 blue:0.012 alpha:1] /*#003003*/;
+        listLabel.text = @"List of Items";
+        listLabel.textAlignment = NSTextAlignmentLeft;
+        listLabel.textColor = [UIColor cyanColor];
+    }
+    // Add the Subview to execute
+    [self.view addSubview:listLabel];
+    
+  /*  NSString *book1 = @"JavaScript";
+    NSString *book2 = @"Arrays";
+    NSString *book3 = @"Objects";
+    NSString *book4 = @"Strings";
+    NSString *book5 = @"Methods"; */
+    
 }
     
 - (void)didReceiveMemoryWarning
