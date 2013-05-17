@@ -18,9 +18,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    // 
+    
+        
     // Background color
-    self.view.backgroundColor = [UIColor colorWithRed:0.8 green:0.941 blue:0.059 alpha:1]; /*#ccf00f*/    // UILabel Title label
+    self.view.backgroundColor = [UIColor colorWithRed:0.588 green:0.541 blue:0.561 alpha:1]; /*#968a8f*/
+    
+    // UILabel Title label
     UILabel *label;
     label = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 400, 20)];
     if (label != nil)
@@ -142,10 +145,10 @@
         listItemsLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 360, 300, 60)];
         if (listItemsLabel != nil)
         {
-            listItemsLabel.backgroundColor = [UIColor colorWithRed:0 green:0.188 blue:0.012 alpha:1] /*#003003*/;
+            listItemsLabel.backgroundColor = [UIColor colorWithRed:0.227 green:0.247 blue:0.251 alpha:1]; /*#3a3f40*/
             listItemsLabel.text = items;
             listItemsLabel.textAlignment = NSTextAlignmentCenter;
-            listItemsLabel.textColor = [UIColor cyanColor];
+            listItemsLabel.textColor = [UIColor colorWithRed:0.361 green:0.824 blue:0.949 alpha:1] /*#5cd2f2*/;
             listItemsLabel.numberOfLines = 20;        }
         // Add the Subview to execute
         [self.view addSubview:listItemsLabel];
