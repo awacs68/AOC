@@ -20,9 +20,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     // 
     // Background color
-    self.view.backgroundColor = [UIColor grayColor];
-    
-    // UILabel Title label
+    self.view.backgroundColor = [UIColor colorWithRed:0.8 green:0.941 blue:0.059 alpha:1]; /*#ccf00f*/    // UILabel Title label
     UILabel *label;
     label = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 400, 20)];
     if (label != nil)
@@ -127,14 +125,33 @@
     // Add the Subview to execute
     [self.view addSubview:listLabel];
     
-  /*  NSString *book1 = @"JavaScript";
-    NSString *book2 = @"Arrays";
-    NSString *book3 = @"Objects";
-    NSString *book4 = @"Strings";
-    NSString *book5 = @"Methods"; */
+    NSString *book1 = @"JavaScript";
+    NSString *book2 = @" Arrays";
+    NSString *book3 = @" Objects";
+    NSString *book4 = @" Strings";
+    NSString *book5 = @" and Methods";
     
+    NSArray *bookItems = [[NSArray alloc] initWithObjects:book1, book2, book3, book4, book5, nil];
+    NSMutableString * items = [[NSMutableString alloc] initWithCapacity:5];
+    for (int i = 0; i < bookItems.count; i++) {
+        [items appendString: [bookItems objectAtIndex: i]];
+        if (i < bookItems.count -1) {
+            [items appendString:@","];
+        }
+    UILabel *listItemsLabel;
+        listItemsLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 360, 300, 60)];
+        if (listItemsLabel != nil)
+        {
+            listItemsLabel.backgroundColor = [UIColor colorWithRed:0 green:0.188 blue:0.012 alpha:1] /*#003003*/;
+            listItemsLabel.text = items;
+            listItemsLabel.textAlignment = NSTextAlignmentCenter;
+            listItemsLabel.textColor = [UIColor cyanColor];
+            listItemsLabel.numberOfLines = 20;        }
+        // Add the Subview to execute
+        [self.view addSubview:listItemsLabel];
+    }
 }
-    
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
