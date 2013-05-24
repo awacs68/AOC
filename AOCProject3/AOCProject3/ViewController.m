@@ -70,7 +70,9 @@
     NSString *myAppend = [self append:myText with:myString];
     [self displayAlertWithString:myAppend];
     
-    
+// Call Append Function
+    NSString *testString = [self append:@"It displays" with:@"cool"];
+    [self displayAlertWithString:testString];
     
 
     [super viewDidLoad];
