@@ -9,5 +9,25 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    
+}
+// Add Function
+- (int)add:(NSInteger)carOne carTwo:(NSInteger)carTwo;
+
+// Compare Function
+- (BOOL)compare:(NSInteger)firstInt secondInt:(NSInteger)secondInt;
+
+// Append Function
+- (NSString*)append: (NSString*)appendString1 with:(NSString*)appendString2;
+
+// Display Alert With String Function
+
+
+
+
+
+
+
 
 @end
