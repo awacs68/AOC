@@ -13,8 +13,9 @@
 @end
 
 @implementation ViewController
+
 // Add Function
-- (int)add:(NSInteger)carOne carTwo:(NSInteger)carTwo
+- (int)add:(NSInteger)carOne addCarTwo:(NSInteger)carTwo
 {
     return (carOne + carTwo);
 }
@@ -37,8 +38,13 @@
     NSMutableString *append1 = [[NSMutableString alloc] initWithString:appendString1];
     NSString *append3 = [append1 stringByAppendingString:appendString1];
     return append3;
-    
-    
+}
+
+// Display Alert With String Function
+- (void)displayAlertWithString:(NSString*)addString
+{
+    UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle:@"I love Cars" message:addString delegate:nil cancelButtonTitle:@"Click if you love cars also" otherButtonTitles:nil];
+    [myAlert show];
 }
 
 
@@ -47,11 +53,23 @@
 
 - (void)viewDidLoad
 {
-    int cars = [self add:1 carTwo:2];
-    NSLog(@"%d", cars);
-    
-    
+// Call 
+    int myCars = [self add:1 addCarTwo:2];
+    NSLog(@"%d", myCars);
 
+// Call Add display with alert with string
+    
+// Change Number to NSString
+    NSNumber *changeNumber = [NSNumber numberWithInt:myCars];
+//
+    NSString *myString = [changeNumber stringValue];
+//
+    NSString *myText = [NSString stringWithFormat:@"The number is "];
+    
+//
+    NSString *myAppend = [self append:myText with:myString];
+    [self displayAlertWithString:myAppend];
+    
     
     
 

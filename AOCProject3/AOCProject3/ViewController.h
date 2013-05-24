@@ -13,7 +13,7 @@
     
 }
 // Add Function
-- (int)add:(NSInteger)carOne carTwo:(NSInteger)carTwo;
+- (int)add:(NSInteger)carOne addCarTwo:(NSInteger)carTwo;
 
 // Compare Function
 - (BOOL)compare:(NSInteger)firstInt secondInt:(NSInteger)secondInt;
@@ -22,8 +22,7 @@
 - (NSString*)append: (NSString*)appendString1 with:(NSString*)appendString2;
 
 // Display Alert With String Function
-
-
+- (void)displayAlertWithString:(NSString*)addString;
 
 
 
