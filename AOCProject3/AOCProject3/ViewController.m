@@ -36,7 +36,7 @@
 - (NSString*)append: (NSString*)appendString1 with:(NSString*)appendString2
 {
     NSMutableString *append1 = [[NSMutableString alloc] initWithString:appendString1];
-    NSString *append3 = [append1 stringByAppendingString:appendString1];
+    NSString *append3 = [append1 stringByAppendingString:appendString2];
     return append3;
 }
 
@@ -61,18 +61,25 @@
     
 // Change Number to NSString
     NSNumber *changeNumber = [NSNumber numberWithInt:myCars];
-//
+// Change String
     NSString *myString = [changeNumber stringValue];
-//
+// Change Text
     NSString *myText = [NSString stringWithFormat:@"The number is "];
     
-//
+// Append the string
     NSString *myAppend = [self append:myText with:myString];
     [self displayAlertWithString:myAppend];
     
 // Call Append Function
-    NSString *testString = [self append:@"It displays" with:@"cool"];
+    NSString *testString = [self append:@"It displays. " with:@"Cool"];
     [self displayAlertWithString:testString];
+    
+// Calling the compare function
+    int theCars1 = 3;
+    int theCars2 = 3;
+   BOOL myBool = [self compare:theCars1 secondInt:theCars2];
+    NSString *compareBool = [NSString stringWithFormat:@"If car %d is the the car I fixed then car number %d is the repaired car. %@", theCars1, theCars2, myBool ? @"Yes" : @"No"];
+    [self displayAlertWithString:compareBool];
     
 
     [super viewDidLoad];
