@@ -31,7 +31,7 @@
         [self.view addSubview:userLabel];
     }
     // User Name Textfield
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(90.0f, 15.0f, 220.0f, 30.0f)];
+    textField = [[UITextField alloc] initWithFrame:CGRectMake(90.0f, 15.0f, 220.0f, 30.0f)];
     if (textField != nil)
     {
         textField.borderStyle = UITextBorderStyleRoundedRect;
@@ -48,12 +48,13 @@
         [self.view addSubview:button];
     }
     // User Name Display
-    UILabel *nameLabel;
-    nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 110, 320, 65)];
+    
+    nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 110.0f, 320.0f, 65.0f)];
     if (nameLabel != nil)
     {
         nameLabel.textColor = [UIColor blueColor];
         nameLabel.text = @"Please Enter Username";
+        nameLabel.textAlignment = NSTextAlignmentCenter;
         [self.view addSubview:nameLabel];
     }
     // Date Button
@@ -94,7 +95,16 @@
 {
     if (button.tag == BUTTON_ZERO)
     {
-        
+        NSString *logName = [textField text];
+        if (logName.length > 0) {
+            NSString *logInfo = [[NSString alloc] initWithFormat:@"User: %@ has been logged in", logName];
+            nameLabel.text = logInfo;
+            nameLabel.textColor = [UIColor yellowColor];
+            nameLabel.backgroundColor = [UIColor blackColor];
+        }else{
+            nameLabel.text = @"Username cannot be empty";
+            nameLabel.textColor = [UIColor redColor];
+        }
     }
     // Date Display
     else if (button.tag == DATEBUTTON_ONE)

@@ -11,7 +11,8 @@
 @interface ViewController : UIViewController <UIAlertViewDelegate>
 {
     UILabel *infoLabel;
-    
+    UILabel *nameLabel;
+    UITextField *textField;
 }
 -(void)onClick:(UIButton*)button;
 @end
