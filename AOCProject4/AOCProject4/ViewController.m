@@ -102,7 +102,7 @@
             nameLabel.textColor = [UIColor yellowColor];
             nameLabel.backgroundColor = [UIColor blackColor];
         }else{
-            nameLabel.text = @"Username cannot be empty";
+            nameLabel.text = @"Username cannot be empty!";
             nameLabel.textColor = [UIColor redColor];
         }
     }
