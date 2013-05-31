@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad
 {
+    
 // Background Color
     self.view.backgroundColor = [UIColor whiteColor];
 // User Name Label
@@ -79,40 +80,48 @@
     infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 380.0f, 320.0f, 75.0f)];
     if (infoLabel != nil)
     {
-        infoLabel.textColor = [UIColor blueColor];
+        infoLabel.textColor = [UIColor redColor];
         infoLabel.numberOfLines = 2;
     
     }
-    // Date
-    NSDate *date = [NSDate date];
     
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    if (dateFormatter != nil)
-    {
-        [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-        [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
-        
-    }
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
     // On Click
--(void)onClick:(UIButton*)button
+-(void)onClick:(UIButton*)button;
+    
 {
     if (button.tag == BUTTON_ZERO)
     {
         
     }
+    // Date Display
     else if (button.tag == DATEBUTTON_ONE)
     {
-     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Username!" message:button.titleLabel.text  delegate:nil cancelButtonTitle:@"You are logged in!" otherButtonTitles:nil];
-    if (alertView != nil)
-        {
-            [alertView show];
-        }
+    NSDate *realDate = [NSDate date];
+        
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        
+        if (dateFormatter != nil)
+   {
+            [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+            [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
+            NSString *getDate = [dateFormatter stringFromDate:realDate];
+            //NSLog(@"NSDate");
+        
+     UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle:@"Date & Time" message:getDate delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            
+       if (myAlert != nil)
+            {
+                [myAlert show];
+            }
+    }
+        
     }
     else if (button.tag == INFOBUTTON_TWO)
     {
+        // Defining Info Label
         infoLabel.text = @"This application was created by: Mark McAninch";
         infoLabel.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:infoLabel];

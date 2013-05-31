@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E84A898D175816B400FCCF60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F858681753E4B9008A8A3B /* ViewController.m */; };
 		E8F858501753E4B9008A8A3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F8584F1753E4B9008A8A3B /* UIKit.framework */; };
 		E8F858521753E4B9008A8A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F858511753E4B9008A8A3B /* Foundation.framework */; };
 		E8F858541753E4B9008A8A3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F858531753E4B9008A8A3B /* CoreGraphics.framework */; };
@@ -16,7 +17,6 @@
 		E8F858621753E4B9008A8A3B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F858611753E4B9008A8A3B /* Default.png */; };
 		E8F858641753E4B9008A8A3B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F858631753E4B9008A8A3B /* Default@2x.png */; };
 		E8F858661753E4B9008A8A3B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F858651753E4B9008A8A3B /* Default-568h@2x.png */; };
-		E8F858691753E4B9008A8A3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F858681753E4B9008A8A3B /* ViewController.m */; };
 		E8F8586C1753E4B9008A8A3B /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F8586A1753E4B9008A8A3B /* ViewController_iPhone.xib */; };
 		E8F8586F1753E4B9008A8A3B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F8586D1753E4B9008A8A3B /* ViewController_iPad.xib */; };
 /* End PBXBuildFile section */
@@ -179,7 +179,7 @@
 			files = (
 				E8F8585C1753E4B9008A8A3B /* main.m in Sources */,
 				E8F858601753E4B9008A8A3B /* AppDelegate.m in Sources */,
-				E8F858691753E4B9008A8A3B /* ViewController.m in Sources */,
+				E84A898D175816B400FCCF60 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +310,7 @@
 				E8F858741753E4B9008A8A3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

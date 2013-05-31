@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController <UIAlertViewDelegate>
 {
     UILabel *infoLabel;
+    
 }
 -(void)onClick:(UIButton*)button;
 @end
